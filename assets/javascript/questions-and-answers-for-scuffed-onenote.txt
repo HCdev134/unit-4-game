@@ -1,0 +1,51 @@
+Click Troubles see Example of all 5
+
+Code 
+
+`  $(".math-output-test-head").on("click", function getRandomNumber(){
+
+        var randomNum = Math.random() * 50 ; //setting randomNum to a Math.random
+        document.getElementById("math-output").textContent = "Your Random Number is:    " + randomNum; 
+    })
+    //calling function <!important for click events Blocka
+    getRandomNumber(); ` 
+
+    calling a function in these different ways 
+1
+    function  NULL / [NO_Name of function]() { doing stuff > append to html}
+then there would be
+    no name and just a call? ()
+
+2 function nameOfFunction () {
+    doing stuff. get values. keep track vars. 
+    > append to html 
+}
+html element  just for marking purposes ^
+<button id="click-me" event="onclick" onclick="function nameOfFunction()
+html element  just for marking purposes ^
+3. as seen above, function nameOfFunction () {
+    stuff done > append html 
+
+}
+name +  (call function)
+
+Then: adding code to those 3, i just can't get a working solution even at 100+ attempts (at least without looking or copying the hw solutions)
+
+Other: 
+
+`$(".math-output-test-head").on("click", function getRandomNumber(){
+
+        var randomNum = Math.random() * 50 ; //setting randomNum to a Math.random
+        document.getElementById("math-output").textContent = "Your Random Number is:    " + randomNum; 
+    });`
+    Note:  document.getElementById(*) > append needed var/value to html}; 
+
+    doc.getelement is there instead of the $("#id") selector. 
+
+    $(".math-output-test-head").on("click", function getRandomNumber(){
+
+        var randomNum = Math.random() * 50 ; //setting randomNum to a Math.random
+        $("#math-output").text = "Your Random Number is:    " + randomNum; 
+    }); 
+
+    this does not work, jquery works for selecting my element to click on in the top of the function, but something in the .text is not working. have looked for those small errors, just doesn't work. what could i be doing wrong? 

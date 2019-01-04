@@ -1,0 +1,43 @@
+.greet{
+    text-decoration: none ; 
+    font-weight: bolder ; 
+    font-family: cursive ; 
+}
+.game-name{
+    text-decoration: none; 
+    font-weight: 100 ; 
+    font-family:  cursive ; 
+    color: #4cccca ; 
+    letter-spacing: 3px ; 
+    border-bottom: 2px solid black
+}
+.crystal-container{
+    background-image: url(../../images/gimp-color-water.svg);
+    background-size: contain ; 
+}
+.navbar{
+    overflow: hidden; 
+    background-color: #465983
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 17px 19px ; 
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.04rem ; 
+  }
+  
+/* hover effects */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+  .topnav a.active {
+    background-color: rgba(11, 58, 21, 0.944);
+    color: white;
+    translate: scale(1.1) ; 
+  }
