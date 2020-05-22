@@ -11,9 +11,7 @@
     <!---bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
    
-<!-- SHOULD JQUERY GO IN THE HEAD OF THE DOCUMENT, OR BE INCLUDED RIGHT BEFORE THE SCRIPT TAG?, OR IN AN OUTSIDE DOCUMENT?-->
-      <!---example of what my "official" portfolio will look like, 
-    minus the animal jokes : http://www.osuitviscom.com/wallers/-->
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <style>
         .red-tooltip + .tooltip > .tooltip-inner {
@@ -50,7 +48,7 @@
                                 <div class="col-xs-12">
                                     Instructions: 
                         
-                             <blockquote> Each crystal will append a certain number to your total score.  Win the Game by clicking the crystals in a certain order to math the Random Number </blockquote>
+                             <blockquote> Each crystal will append a certain number to your total score.  Win the Game by clicking the crystals in a certain order to match the Random Number </blockquote>
                                 </div>
                             </div>
                         </div>
@@ -60,34 +58,21 @@
     </div>
 
 
-    <div id="math-output" class="container bg-dark text-light" onclick="randoNumber()" >
-        <h4 class="math-output-test-head">Math output Test</h4>
-       Generate my random number:  _________
+    <div id="math-output" class="container bg-dark text-light" onclick="randomNumber()" >
+       
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 bg-dark text-light jumbotron-fluid p-3">
-                    <div id="player-current-score" class="ml-5 mr-5 p-3 bg-muted text-light">
-                       Player Current Score : 
-                     </div>
-             </div>              
-          
-            <div class="col-md-6 bg-dark text-light jumbotron-fluid p-3">
-                
-            <div id="player-target-score" > Score To Win: </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div id="wins">
-            Wins: 0 ; 
-        </div>
-        <div id="losses">
-            Losses: 0; 
-        </div>
-    </div>
+<div class="target-score"></div>
+<div class="current-score"></div>
+ <div id="scores">
+     <div id="wins">
+
+     </div>
+     <div id="losses">
+
+     </div>
+ </div>
    
     <!--add tooltip data attributes-->
     <div id="game-img-container" class="container">
@@ -99,23 +84,7 @@
 
         </div>
     </div>
-                    <!---COMMENTS SECTION-->
-    <!----layout pretty much set up and looking nice, still having trouble with the script, same with the previous assignment, 
-    this is probably my 10th or so attempt, just now came across one of our old powerpoints that says to turn it in anyway even if we dont like it or even if it doesn't work :( will keep trying and trying to get it to work, i see from solution files sort of how it works, but trying to re create that on my own without using any of that code never seems to pan out -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-           <img id="crystal-a" class="m-3" src="assets/images/ice-crystal.jpg" width="200px" height="150px" max="210px" alt="Crystal 1" >
-           <img id="crystal-b" class="m-3" src="assets/images/fire-crystal.jpeg" width="200px" height="150px" max="210px" alt="Crystal 2" >
-           <img id="crystal-c" class="m-3" src="assets/images/earth-crystal.jpg" width="200px" height="150px" max="210px" alt="Crystal 3" >
-           <img id="crystal-d" class="m-3" src="assets/images/pink-crystal.jpg" width="200px" height="150px" max="210px" alt="Crystal 4">
-
-
-
-        </div>
-    </div>
-</div>
+               
 
  <!-- Added link to the jQuery Library
 IMPORTANT: GOES BEFORE SCRIPT TAG -->
