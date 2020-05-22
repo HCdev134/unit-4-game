@@ -1,99 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JS # 4 jQuery-game </title>
- 
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/css/reset.css"> 
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!---bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-   
+
 
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <style>
-        .red-tooltip + .tooltip > .tooltip-inner {
+        .red-tooltip+.tooltip>.tooltip-inner {
             background-color: #f00;
         }
-        </style>
+    </style>
 
 </head>
+
 <body>
-<!--introducing the game and providing some simple markup to start layout -->
+    <!--introducing the game and providing some simple markup to start layout -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-    
-                    <div class="navbar">
-                            <a href="index.html">Crystal Collector / home</a>
-                        
-                            <a href="https://meyerweb.com/eric/tools/css/reset/">MeyerWeb CSS Reset Sheets </a>
-                            <a href="https://api.jquery.com/">jQuery docs</a>
-                        </div>
+
+                <div class="navbar">
+                    <a href="index.html">Crystal Collector / home</a>
+
+                    <a href="https://meyerweb.com/eric/tools/css/reset/">MeyerWeb CSS Reset Sheets </a>
+                    <a href="https://api.jquery.com/">jQuery docs</a>
+                </div>
                 <div class="jumbotron w-100 p-5">
                     <!--nested jumbotron for images-->
                     <!--border class with heightless container is on purpose, to give a line there, instead of adding extra elements  -->
-                    <div class="container border border-info">
-                        <img class="float-right img red-tooltip bg-primary" src="assets/images/gimp-color-water.svg" data-toggle="tooltip" " data-placement="left" title="Crystal" > 
-                        <img class="float-right img bg-info" src="assets/images/gimp-curve-free.svg" data-toggle="tooltip" data-placement="top" title="Crystal" > 
-                        <img class="float-right img bg-warning" src="assets/images/gimp-curve-smooth.svg"  data-toggle="tooltip" data-placement="right" title="Crystal" > 
-                </div>
+
                     <h2>hello</h2>
-                    <p class="lead">and welcome...</p>
-                    <p class="greet">to jQuery unit 4 game ,<span class="display-4 game-name" >crystal collectors</span></p>
-                    <div id="instructions-container" class="container">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    Instructions: 
-                        
-                             <blockquote> Each crystal will append a certain number to your total score.  Win the Game by clicking the crystals in a certain order to match the Random Number </blockquote>
-                                </div>
-                            </div>
-                        </div>
+
+                    <p class="lead">Each crystal will append a certain number to your total score.
+                        Win the Game by clicking
+                        the crystals in a certain order
+                        to match the Random Number
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div id="math-output" class="container bg-dark text-light" onclick="randomNumber()" >
-       
+
+    <div id="math-output" class="container bg-dark text-light" onclick="randomNumber()">
+
     </div>
 
 
-<div class="target-score"></div>
-<div class="current-score"></div>
- <div id="scores">
-     <div id="wins">
+    <div class="target-score"></div>
+    <div class="current-score"></div>
+    <div id="scores">
+        <div id="wins">
 
-     </div>
-     <div id="losses">
+        </div>
+        <div id="losses">
 
-     </div>
- </div>
-   
+        </div>
+    </div>
+
     <!--add tooltip data attributes-->
     <div id="game-img-container" class="container">
         <div class="crystal-container">
 
-    <img src="assets/images/gimp-cursor.svg" title="Crystal" data-placement="right" alt="broken image" > 
-    <img src="assets/images/gimp-curve-free.svg" title="Crystal" data-placement="right" alt="broken image"> 
-    <img src="assets/images/gimp-curve-smooth.svg" title="Crystal" data-placement="right" alt="broken image"> 
+            <img src="assets/images/gimp-cursor.svg" title="Crystal" data-placement="right" alt="broken image">
+            <img src="assets/images/gimp-curve-free.svg" title="Crystal" data-placement="right" alt="broken image">
+            <img src="assets/images/gimp-curve-smooth.svg" title="Crystal" data-placement="right" alt="broken image">
 
         </div>
     </div>
-               
 
- <!-- Added link to the jQuery Library
+    <div class="crystal-container">
+        <div class="container">
+            <div class="col-s-12 col-md-4"> 
+                <img src="assets/images/ice-crystal.jpg" alt="" id="ice-crystal" width="300" height="200">
+            </div>
+            <div class="col-s-12 col-md-4"> 
+                col
+            </div>
+            <div class="col-s-12 col-md-4"> 
+                col
+            </div>
+        </div>
+    </div>
+
+    <!-- Added link to the jQuery Library
 IMPORTANT: GOES BEFORE SCRIPT TAG -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/game103.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game103.js"></script>
 
 
 
 
 
 </body>
+
 </html>

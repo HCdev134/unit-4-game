@@ -1,6 +1,16 @@
 /*---Global Variables Should go here--
 ------------------------------------*/
 
+
+var crystalNums = [];
+var ice_crystal_val = Math.random(2);
+
+var ice_crystal_ele = document.getElementById("ice-crystal"); 
+
+ice_crystal_ele.addEventListener("click", iceCrystalTest)
+function iceCrystalTest(){
+console.log("ice crystal value:", ice_crystal_val)
+}
 //Setting our Crystal Object / nested object w/ values to call at particular time
 
 var crystalValues = {
